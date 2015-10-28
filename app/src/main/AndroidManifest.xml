@@ -18,6 +18,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
+        <activity android:name=".MuestraDetalle"
+            android:parentActivityName=".ActividadPrincipal">
+            <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".ActividadPrincipal" />
+        </activity>
+
+</application>
 
 </manifest>

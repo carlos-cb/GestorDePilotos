@@ -6,16 +6,18 @@ public class Piloto {
     private int _dorsal;
     private String _moto;
     private  boolean _activo;
+    private String _imagen;
 
 
     //Constructor
 
-    public Piloto(int _id, String _nombre, int _dorsal, String _moto, boolean _activo) {
+    public Piloto(int _id, String _nombre, int _dorsal, String _moto, boolean _activo, String _imagen) {
         this._id = _id;
         this._nombre = _nombre;
         this._dorsal = _dorsal;
         this._moto = _moto;
         this._activo = _activo;
+        this._imagen = _imagen;
     }
 
     public int get_id() {
@@ -58,6 +60,14 @@ public class Piloto {
         this._activo = _activo;
     }
 
+    public void set_imagen(String _imagen) {
+        this._imagen = _imagen;
+    }
+
+    public String get_imagen() {
+        return _imagen;
+    }
+
     @Override
     public String toString() {
         return "Piloto{" +
@@ -66,6 +76,7 @@ public class Piloto {
                 ", _dorsal=" + _dorsal +
                 ", _moto='" + _moto + '\'' +
                 ", _activo=" + _activo +
+                ", _imagen=" + _imagen + '\'' +
                 '}';
     }
 }

@@ -5,13 +5,4 @@
         android:title="@string/action_settings"
         android:orderInCategory="100"
         app:showAsAction="never" />
-
-    <item
-        android:id="@+id/vaciar"
-        android:title="vaciar"
-        android:icon="@android:drawable/ic_delete"
-        app:shouAsAction="ifRoom">
-    </item>
-
-
 </menu>

@@ -17,6 +17,7 @@ public class PilotoContract {
         public static final String COL_NAME_DORSAL = "dorsal";
         public static final String COL_NAME_MOTO = "moto";
         public static final String COL_NAME_ACTIVO = "activo";
+        public static final String COL_NAME_IMAGEN = "imagen_url";
     }
 
 
