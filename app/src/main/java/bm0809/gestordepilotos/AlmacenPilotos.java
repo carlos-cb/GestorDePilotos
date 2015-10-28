@@ -18,7 +18,7 @@ public class AlmacenPilotos extends SQLiteOpenHelper{
     //Nombre del fichero de BD
     protected static final String DEFAULT_DB_FILENAME = "pilotos.db";
 
-    protected static final int DATABASE_VERSION = 2;
+    protected static final int DATABASE_VERSION = 3;
 
     public AlmacenPilotos(Context context){
         super(context, DEFAULT_DB_FILENAME, null, DATABASE_VERSION);
@@ -43,7 +43,7 @@ public class AlmacenPilotos extends SQLiteOpenHelper{
         onCreate(db);
     }
 
-    public void add(Piloto piloto){
+    public long add(Piloto piloto){
         //String consultaSQL = " INSERT " + tablaPiloto.TABLE_NAME +
 
         SQLiteDatabase db = this.getReadableDatabase();
@@ -56,7 +56,7 @@ public class AlmacenPilotos extends SQLiteOpenHelper{
         values.put(tablaPiloto.COL_NAME_MOTO, piloto.get_moto());
         values.put(tablaPiloto.COL_NAME_ACTIVO, piloto.is_activo());
         values.put(tablaPiloto.COL_NAME_IMAGEN, piloto.get_imagen());
-        db.insert(tablaPiloto.TABLE_NAME, null, values);
+        return db.insert(tablaPiloto.TABLE_NAME, null, values);
 
     }
 

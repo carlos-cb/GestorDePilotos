@@ -44,7 +44,7 @@ public class ActividadPrincipal extends AppCompatActivity {
         AlmacenPilotos db = new AlmacenPilotos(getApplicationContext());
 
 
-        db.add(new Piloto(7, "piloto7", 5, "Jaaa", true, "es"));
+        db.add(new Piloto(7, "piloto7", 5, "Jaaa", true, "https://avatars1.githubusercontent.com/u/5365410"));
         db.add(new Piloto(8, "piloto8", 77, "Ksss", false, "es"));
         db.add(new Piloto(9, "piloto9", 88, "Lddd", true, "es"));
 
